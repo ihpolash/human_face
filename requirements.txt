@@ -1,0 +1,10 @@
+asgiref
+certifi
+Django
+djangorestframework
+dlib
+numpy
+opencv-python
+Pillow
+pytz
+sqlparse
