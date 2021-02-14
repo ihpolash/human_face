@@ -25,7 +25,7 @@ SECRET_KEY = 'dspy+$$_#q(+w(5xi@5gk&uavs-7t(-cf3cs8&_mm!dgfj0)&!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
