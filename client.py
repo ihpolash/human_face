@@ -25,13 +25,13 @@ def get_face_detect(image):
     print(len(det))
 
     if len(det)==0:
-        response = {"message": "No Face found!" }
+        response = {"message": 0 }
         pass
     elif len(det)>1:
-        response = {"message": "Multiple Face Detected!"}
+        response = {"message": len(det)}
         pass
     elif len(det)==1:
-        response = {"message": "Single Face Detected!"}
+        response = {"message": len(det)}
         pass
 
     default_storage.delete(f'tmp/temp.jpg')
