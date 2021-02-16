@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'polls'
 ]
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
@@ -111,40 +113,40 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-        '*',
-#         'localhost:8000',
-#         'localhost:8080',
-#         'localhost:5000',
-#         '127.0.0.1:9000',
-#         '127.0.0.1:5000',
-#         '127.0.0.1:8000',
-#         '127.0.0.1:8080',
-#         '0.0.0.0:9000',
-#         '0.0.0.0:5000',
-#         '0.0.0.0:8000',
-#         '0.0.0.0:8080',
-    )
+# CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_WHITELIST = (
+#         '*',
+# #         'localhost:8000',
+# #         'localhost:8080',
+# #         'localhost:5000',
+# #         '127.0.0.1:9000',
+# #         '127.0.0.1:5000',
+# #         '127.0.0.1:8000',
+# #         '127.0.0.1:8080',
+# #         '0.0.0.0:9000',
+# #         '0.0.0.0:5000',
+# #         '0.0.0.0:8000',
+# #         '0.0.0.0:8080',
+#     )
 
-CORS_ALLOW_METHODS = (
-        'GET',
-        'POST',
-        'PUT',
-        'PATCH',
-        'DELETE',
-        'OPTIONS'
-)
+# CORS_ALLOW_METHODS = (
+#         'GET',
+#         'POST',
+#         'PUT',
+#         'PATCH',
+#         'DELETE',
+#         'OPTIONS'
+# )
 
-CORS_ALLOW_HEADERS = (
-        # 'Access-Control-Allow-Origin',
-        'x-requested-with',
-        'content-type',
-        'accept',
-        'origin',
-        'authorization',
-        'x-csrftoken'
-)
+# CORS_ALLOW_HEADERS = (
+#         # 'Access-Control-Allow-Origin',
+#         'x-requested-with',
+#         'content-type',
+#         'accept',
+#         'origin',
+#         'authorization',
+#         'x-csrftoken'
+# )
 
 
 # Internationalization
