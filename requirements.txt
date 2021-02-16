@@ -3,6 +3,7 @@ asgiref
 certifi
 Django
 djangorestframework
+django-cors-headers
 dlib
 numpy
 opencv-python-headless==4.2.0.32
