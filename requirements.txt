@@ -6,7 +6,7 @@ djangorestframework
 django-cors-headers
 dlib
 numpy
-opencv-python-headless==4.2.0.32
+opencv-python-headless==4.8.1.78.32
 Pillow
 pytz
 sqlparse
